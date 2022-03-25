@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.projectxtime.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminMenuFragment"
+        android:name="com.example.projectxtime.AdminMenuFragment"
+        android:label="fragment_admin_menu"
+        tools:layout="@layout/fragment_admin_menu" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.projectxtime.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_adminMenuFragment"
+            app:destination="@id/adminMenuFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_teacherMenuFragment"
+            app:destination="@id/teacherMenuFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_studentMenuFragment"
+            app:destination="@id/studentMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentMenuFragment"
+        android:name="com.example.projectxtime.StudentMenuFragment"
+        android:label="fragment_student_menu"
+        tools:layout="@layout/fragment_student_menu" />
+    <fragment
+        android:id="@+id/teacherMenuFragment"
+        android:name="com.example.projectxtime.TeacherMenuFragment"
+        android:label="fragment_teacher_menu"
+        tools:layout="@layout/fragment_teacher_menu" />
+</navigation>
