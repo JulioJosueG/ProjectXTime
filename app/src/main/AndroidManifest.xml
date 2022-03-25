@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectXTime">
         <activity
+            android:theme="@style/splash_theme"
             android:name=".view.MainActivity"
             android:exported="true">
             <intent-filter>
