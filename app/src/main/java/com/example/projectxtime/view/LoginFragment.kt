@@ -1,13 +1,14 @@
-package com.example.projectxtime
+package com.example.projectxtime.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.projectxtime.R
 
 
-class AdminMenuFragment : Fragment() {
+class LoginFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +19,8 @@ class AdminMenuFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_admin_menu, container, false)
+        return inflater.inflate(R.layout.fragment_login, container, false)
     }
+
 
 }
