@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.ProjectXTime" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.ProjectXTime" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/red_700</item>
         <item name="colorPrimaryVariant">@color/red_500</item>
@@ -12,10 +12,11 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+
     </style>
-
-
     <style name = "splash_theme" parent="Theme.ProjectXTime">
-        <item name="android:windowBackground">@drawable/logow_2</item>
+        <item name="android:windowBackground">@drawable/logox</item>
+
     </style>
 </resources>
