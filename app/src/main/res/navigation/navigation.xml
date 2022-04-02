@@ -36,12 +36,21 @@
     </fragment>
     <fragment
         android:id="@+id/studentMenuFragment"
-        android:name="com.example.projectxtime.view.StudentMenuFragment"
+        android:name="com.example.projectxtime.view.students.StudentMenuFragment"
         android:label="fragment_student_menu"
-        tools:layout="@layout/fragment_student_menu" />
+        tools:layout="@layout/fragment_student_menu" >
+        <action
+            android:id="@+id/action_studentMenuFragment_to_studentScheduleFragment"
+            app:destination="@id/studentScheduleFragment" />
+    </fragment>
     <fragment
         android:id="@+id/teacherMenuFragment"
         android:name="com.example.projectxtime.view.TeacherMenuFragment"
         android:label="fragment_teacher_menu"
         tools:layout="@layout/fragment_teacher_menu" />
+    <fragment
+        android:id="@+id/studentScheduleFragment"
+        android:name="com.example.projectxtime.view.students.StudentScheduleFragment"
+        android:label="fragment_student_schedule"
+        tools:layout="@layout/fragment_student_schedule" />
 </navigation>
