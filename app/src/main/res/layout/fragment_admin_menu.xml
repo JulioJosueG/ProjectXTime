@@ -8,10 +8,7 @@
     android:padding="16dp">
 
 
-    <ImageView
-        android:layout_width="46dp"
-        android:layout_height="46dp"
-        android:src="@drawable/ic_person"/>
+
 
     <TextView
         android:gravity="center"
@@ -127,11 +124,6 @@
     </com.google.android.material.card.MaterialCardView>
 
 
-    <ImageView
-        android:layout_width="46dp"
-        android:layout_height="46dp"
-        android:src="@drawable/ic_person"/>
-
     <TextView
         style="@style/TextAppearance.AppCompat.Headline"
         android:layout_width="match_parent"
@@ -139,8 +131,7 @@
         android:gravity="center"
         android:minHeight="46dp"
         android:text="Menu Admin"
-        android:textAlignment="center"
-        />
+        android:textAlignment="center" />
 
 
     <com.google.android.material.card.MaterialCardView

@@ -7,16 +7,13 @@
     tools:context=".view.students.StudentMenuFragment"
     android:padding="16dp">
 
-    <ImageView
-        android:layout_width="46dp"
-        android:layout_height="46dp"
-        android:src="@drawable/ic_person"/>
+
 
     <TextView
-        android:gravity="center"
         style="@style/TextAppearance.AppCompat.Headline"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:minHeight="46dp"
         android:text="Menu Docente"
         android:textAlignment="center" />
