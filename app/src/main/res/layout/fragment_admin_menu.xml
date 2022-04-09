@@ -4,14 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".view.StudentMenuFragment"
+    tools:context=".view.students.StudentMenuFragment"
     android:padding="16dp">
 
 
-    <ImageView
-        android:layout_width="46dp"
-        android:layout_height="46dp"
-        android:src="@drawable/ic_person"/>
+
 
     <TextView
         android:gravity="center"
@@ -126,11 +123,6 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 
-
-    <ImageView
-        android:layout_width="46dp"
-        android:layout_height="46dp"
-        android:src="@drawable/ic_person"/>
 
     <TextView
         style="@style/TextAppearance.AppCompat.Headline"

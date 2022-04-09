@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentCourseRetirementFragment">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retirar"
+        android:textAlignment="center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        style="@style/TextAppearance.AppCompat.Headline"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="25dp"
+        tools:listitem="@layout/student_schedule_rv_item" />
+
+    <TextView
+        android:id="@+id/Bottom"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rvSchedule"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:paddingEnd="8dp"
+        android:text="Fecha Limite:16 de mayo"
+        android:textAlignment="textEnd" />
+
+
+
+</RelativeLayout>
