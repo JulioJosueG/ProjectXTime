@@ -139,8 +139,7 @@
         android:gravity="center"
         android:minHeight="46dp"
         android:text="Menu Admin"
-        android:textAlignment="center"
-        />
+        android:textAlignment="center" />
 
 
     <com.google.android.material.card.MaterialCardView
