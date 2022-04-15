@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "968673659",
+    "project_id": "crudappprojectxti",
+    "storage_bucket": "crudappprojectxti.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968673659:android:d8a09ebdbbbc7962afd5de",
+        "android_client_info": {
+          "package_name": "com.example.projectxtime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968673659-jfec9jtk5b02ackf1q9ifr8ru47qtmeu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL3bC-RrLRv0AKtvSPiXTsROnuCuKCXA8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968673659-jfec9jtk5b02ackf1q9ifr8ru47qtmeu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
