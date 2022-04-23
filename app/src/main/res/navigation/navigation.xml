@@ -16,9 +16,19 @@
     </fragment>
     <fragment
         android:id="@+id/adminMenuFragment"
-        android:name="com.example.projectxtime.view.AdminMenuFragment"
+        android:name="com.example.projectxtime.view.admin.AdminMenuFragment"
         android:label="fragment_admin_menu"
-        tools:layout="@layout/fragment_admin_menu" />
+        tools:layout="@layout/fragment_admin_menu" >
+        <action
+            android:id="@+id/action_adminMenuFragment_to_adminTeachersFragment"
+            app:destination="@id/adminTeachersFragment" />
+        <action
+            android:id="@+id/action_adminMenuFragment_to_adminStudentsFragment"
+            app:destination="@id/adminStudentsFragment" />
+        <action
+            android:id="@+id/action_adminMenuFragment_to_adminSubjetsFragment"
+            app:destination="@id/adminSubjetsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.projectxtime.view.LoginFragment"
@@ -53,4 +63,19 @@
         android:name="com.example.projectxtime.view.students.StudentScheduleFragment"
         android:label="fragment_student_schedule"
         tools:layout="@layout/fragment_student_schedule" />
+    <fragment
+        android:id="@+id/adminTeachersFragment"
+        android:name="com.example.projectxtime.view.admin.AdminTeachersFragment"
+        android:label="fragment_admin_teachers"
+        tools:layout="@layout/fragment_admin_teachers" />
+    <fragment
+        android:id="@+id/adminStudentsFragment"
+        android:name="com.example.projectxtime.view.admin.AdminStudentsFragment"
+        android:label="fragment_admin_students"
+        tools:layout="@layout/fragment_admin_students" />
+    <fragment
+        android:id="@+id/adminSubjetsFragment"
+        android:name="com.example.projectxtime.view.admin.AdminSubjetsFragment"
+        android:label="fragment_admin_subjets"
+        tools:layout="@layout/fragment_admin_subjets" />
 </navigation>

@@ -60,6 +60,7 @@
                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
                 <Button
+                    android:id="@+id/btn_student"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Ir"
@@ -114,6 +115,7 @@
                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
                 <Button
+                    android:id="@+id/btn_asignaturas"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Ir"
@@ -177,6 +179,7 @@
                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
                 <Button
+                    android:id="@+id/btn_aula"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/blue_200"
@@ -230,6 +233,7 @@
                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
                 <Button
+                    android:id="@+id/btn_docentes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Ir"
