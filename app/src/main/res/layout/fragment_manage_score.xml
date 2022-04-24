@@ -17,6 +17,7 @@
         android:textAlignment="center" />
 
     <RelativeLayout
+        android:id="@+id/rl_set_subject"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_below="@+id/title"
@@ -36,9 +37,14 @@
             android:id="@+id/planets_spinner"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_toEndOf="@id/tv_subject" />
+            android:layout_toEndOf="@id/tv_subject"/>
     </RelativeLayout>
 
-
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_student_for_score"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/rl_set_subject"
+    android:layout_marginTop="15dp"/>
 
 </RelativeLayout>
