@@ -1,4 +1,4 @@
-package com.example.projectxtime.view.admin
+package com.example.projectxtime.view.admin.Subjets
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,6 +9,7 @@ import com.example.projectxtime.R
 
 
 class AddSubjets : Fragment() {
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

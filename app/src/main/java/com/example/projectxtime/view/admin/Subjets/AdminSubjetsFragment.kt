@@ -1,4 +1,4 @@
-package com.example.projectxtime.view.admin
+package com.example.projectxtime.view.admin.Subjets
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -23,7 +23,7 @@ class AdminSubjetsFragment : Fragment() {
         binding = FragmentAdminSubjetsBinding.inflate(inflater, container,false)
 
         binding.btnFloatAdd.setOnClickListener {
-            it.findNavController().navigate(R.id.action_adminSubjetsFragment_to_addSubjets)
+            it.findNavController().navigate(R.id.action_adminSubjetsFragment_to_addSubjets2)
         }
         return inflater.inflate(R.layout.fragment_admin_subjets, container, false)
     }
