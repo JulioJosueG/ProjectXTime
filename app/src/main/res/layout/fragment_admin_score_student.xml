@@ -27,11 +27,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <TextView
+                android:id="@+id/tv_estudiante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:hint="Estudiante"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
             <EditText
                 android:id="@+id/et_pparcial"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:layout_below="@id/tv_estudiante"
                 android:hint="Primer parcial"
                 android:inputType="textPersonName|textCapWords"
                 android:padding="10dp"
@@ -83,7 +95,6 @@
                 android:padding="10dp"
                 android:textColor="@color/black"
                 android:textSize="18dp" />
-
 
         </RelativeLayout>
     </LinearLayout>
