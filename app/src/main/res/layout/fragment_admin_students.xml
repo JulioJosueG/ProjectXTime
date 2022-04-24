@@ -38,13 +38,14 @@
 
     </androidx.recyclerview.widget.RecyclerView>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btn_float_add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:src="@drawable/ic_add"
-        android:backgroundTint="@color/red"/>
+   <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:id="@+id/btn_float_add"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentEnd="true"
+       android:layout_alignParentBottom="true"
+       android:backgroundTint="@color/red"
+       android:src="@drawable/ic_add"
+       tools:ignore="SpeakableTextPresentCheck" />
 
 </RelativeLayout>

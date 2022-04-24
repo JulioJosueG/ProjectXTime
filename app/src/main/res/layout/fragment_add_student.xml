@@ -28,43 +28,46 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/CodAsignatura"
+                android:id="@+id/etmatricula"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:hint="Matrícula"
                 android:inputType="textPersonName|textCapWords"
                 android:padding="10dp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <EditText
-                android:id="@+id/et_NombreAsig"
+                android:id="@+id/etNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/CodAsignatura"
+                android:layout_below="@id/etmatricula"
                 android:layout_marginTop="10dp"
                 android:hint="Nombre"
                 android:inputType="textPersonName|textCapWords"
                 android:padding="10dp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <EditText
-                android:id="@+id/et_Creditos"
+                android:id="@+id/etApellidos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/et_NombreAsig"
+                android:layout_below="@id/etNombre"
                 android:layout_marginTop="10dp"
                 android:drawablePadding="10dp"
                 android:hint="Apellido"
                 android:inputType="textPersonName|textCapWords"
                 android:padding="10dp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
                 android:id="@+id/tv_sex"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/et_Creditos"
+                android:layout_below="@id/etApellidos"
                 android:layout_marginTop="10dp"
                 android:drawablePadding="10dp"
                 android:hint="Sexo"

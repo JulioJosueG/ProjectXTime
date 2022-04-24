@@ -11,8 +11,9 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Formulario de Profesores"
         android:textAlignment="center"
-        android:text="Formulario de Profesores"/>
+        tools:ignore="TouchTargetSizeCheck" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/teacherName"
@@ -46,9 +47,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Last Name"
+            android:inputType="textPersonName"
             android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            android:inputType="textPersonName"/>
+            android:textColorHint="#757575" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <RadioGroup

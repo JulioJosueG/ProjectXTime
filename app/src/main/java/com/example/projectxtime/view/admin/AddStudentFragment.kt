@@ -22,6 +22,7 @@ class AddStudentFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
     }
 
     override fun onCreateView(
@@ -37,7 +38,7 @@ class AddStudentFragment : Fragment() {
             validar()
         }
 
-        return inflater.inflate(R.layout.fragment_add_student, container, false)
+        return binding.root
     }
 
     private var matricula = ""
@@ -49,9 +50,9 @@ class AddStudentFragment : Fragment() {
 
         val  uid = auth.currentUser?.uid
 
-        matricula = binding.etMatricula.text.toString()
-        nombre = binding.etName.text.toString()
-        apellido = binding.etLastName.text.toString()
+        matricula = binding.etNombre.text.toString()
+        nombre = binding.etApellidos.text.toString()
+        apellido = binding.etApellidos.text.toString()
 
         if (binding.rbMen.isChecked){
             sexo = "Hombre"
@@ -60,13 +61,14 @@ class AddStudentFragment : Fragment() {
         }
 
         if(nombre == ""){
-            Toast.makeText(this, "El nombre requerido...", Toast.LENGTH_SHORT).show()
+
+            Toast.makeText(requireContext(), "El nombre requerido...", Toast.LENGTH_SHORT).show()
         }
         else if(apellido == ""){
-            Toast.makeText(this, "El apellido es requerido...", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "El apellido es requerido...", Toast.LENGTH_SHORT).show()
         }
         else if(sexo == ""){
-            Toast.makeText(this, "El sexo es requerido...", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "El sexo es requerido...", Toast.LENGTH_SHORT).show()
         }
         else{
             sent()
@@ -89,10 +91,10 @@ class AddStudentFragment : Fragment() {
         dbRef.child(uid!!)
             .setValue(hashMap)
             .addOnSuccessListener {
-                Toast.makeText(this, "Estdiante creado...", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Estdiante creado...", Toast.LENGTH_SHORT).show()
             }
             .addOnFailureListener{e->
-                Toast.makeText(this, "Failed saving user info due to ${e.message}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Failed saving user info due to ${e.message}", Toast.LENGTH_SHORT).show()
             }
     }
 
