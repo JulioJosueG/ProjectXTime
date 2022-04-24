@@ -28,6 +28,12 @@
         <action
             android:id="@+id/action_adminMenuFragment_to_adminSubjetsFragment"
             app:destination="@id/adminSubjetsFragment" />
+        <action
+            android:id="@+id/action_adminMenuFragment_to_adminCRoomFragment"
+            app:destination="@id/adminCRoomFragment" />
+        <action
+            android:id="@+id/action_adminMenuFragment_to_adminScoreFragment"
+            app:destination="@id/adminScoreFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -78,4 +84,14 @@
         android:name="com.example.projectxtime.view.admin.AdminSubjetsFragment"
         android:label="fragment_admin_subjets"
         tools:layout="@layout/fragment_admin_subjets" />
+    <fragment
+        android:id="@+id/adminCRoomFragment"
+        android:name="com.example.projectxtime.view.admin.AdminCRoomFragment"
+        android:label="fragment_admin_c_room"
+        tools:layout="@layout/fragment_admin_c_room" />
+    <fragment
+        android:id="@+id/adminScoreFragment"
+        android:name="com.example.projectxtime.view.admin.AdminScoreFragment"
+        android:label="fragment_admin_score"
+        tools:layout="@layout/fragment_admin_score" />
 </navigation>

@@ -25,18 +25,26 @@ class AdminMenuFragment : Fragment() {
         binding = FragmentAdminMenuBinding.inflate(inflater,container,false)
 
         binding.btnDocentes.setOnClickListener {
-            it.findNavController().navigate(R.id.action_loginFragment_to_teacherMenuFragment)
+            it.findNavController().navigate(R.id.action_adminMenuFragment_to_adminTeachersFragment)
         }
 
         binding.btnStudent.setOnClickListener {
-            it.findNavController().navigate(R.id.action_loginFragment_to_studentMenuFragment)
+            it.findNavController().navigate(R.id.action_adminMenuFragment_to_adminStudentsFragment)
         }
 
         binding.btnAsignaturas.setOnClickListener {
-            //it.findNavController().navigate(R.id.ac)
+            it.findNavController().navigate(R.id.action_adminMenuFragment_to_adminSubjetsFragment)
         }
 
-        return inflater.inflate(R.layout.fragment_admin_menu, container, false)
+        binding.btnAula.setOnClickListener {
+            it.findNavController().navigate(R.id.action_adminMenuFragment_to_adminCRoomFragment)
+        }
+
+        binding.btnCalificacion.setOnClickListener {
+            it.findNavController().navigate(R.id.action_adminMenuFragment_to_adminScoreFragment)
+        }
+
+        return binding.root
     }
 
 }
