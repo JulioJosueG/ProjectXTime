@@ -47,7 +47,7 @@ class AddStudentFragment : Fragment() {
 
     private fun validar() {
 
-        val  uid =
+        val  uid = auth.currentUser?.uid
 
         matricula = binding.etMatricula.text.toString()
         nombre = binding.etName.text.toString()
