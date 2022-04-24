@@ -6,8 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.projectxtime.R
+import com.google.firebase.auth.FirebaseAuth
 
 class AddEditTeacherFragment : Fragment() {
+
+    private lateinit var binding : AddEditTeacherFragment
+
+    private lateinit var database : FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
