@@ -36,6 +36,16 @@
         android:padding="10dp"
         android:textColor="@color/black" />
 
+    <EditText
+        android:id="@+id/course_capacidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Capacidad"
+        android:layout_below="@id/course_nombre"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
