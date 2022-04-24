@@ -59,6 +59,7 @@
                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
                 <Button
+                    android:id="@+id/btn_profesor_horario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Ir"
@@ -112,6 +113,7 @@
                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
                 <Button
+                    android:id="@+id/btn_profesor_publicar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Ir"

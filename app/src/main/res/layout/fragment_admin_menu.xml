@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".view.students.StudentMenuFragment"
+    tools:context="view.AdminMenuFragment"
     android:padding="16dp">
 
 
@@ -60,6 +60,7 @@
                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
                 <Button
+                    android:id="@+id/boton_estudiantes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Ir"
@@ -114,6 +115,7 @@
                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
                 <Button
+                    android:id="@+id/boton_asignaturas"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Ir"
@@ -177,6 +179,7 @@
                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
                 <Button
+                    android:id="@+id/boton_aula"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/blue_200"
@@ -230,9 +233,11 @@
                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
                 <Button
+                    android:id="@+id/boton_docentes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Ir"
+                    android:onClick="Onclick"
                     android:backgroundTint="@color/blue_200"/>
 
             </LinearLayout>

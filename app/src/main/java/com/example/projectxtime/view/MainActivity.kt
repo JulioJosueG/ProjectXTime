@@ -10,5 +10,8 @@ class MainActivity : AppCompatActivity() {
         setTheme(R.style.Theme_ProjectXTime)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
     }
+
 }
