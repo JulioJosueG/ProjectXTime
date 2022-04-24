@@ -19,13 +19,7 @@
         <entry key="..\:/Android/ProjectXTime/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.176" />
         <entry key="..\:/Android/ProjectXTime/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.197" />
         <entry key="..\:/Documents/ProjectXTime/app/src/main/res/drawable/ic_out_assignment.xml" value="0.2005" />
-        <entry key="..\:/Documents/ProjectXTime/app/src/main/res/drawable/ic_periodo.xml" value="0.232" />
-        <entry key="..\:/Documents/ProjectXTime/app/src/main/res/drawable/ic_person.xml" value="0.232" />
-        <entry key="..\:/Documents/ProjectXTime/app/src/main/res/drawable/ic_qualification.xml" value="0.232" />
         <entry key="..\:/Documents/ProjectXTime/app/src/main/res/drawable/ic_schedue.xml" value="0.2005" />
-        <entry key="..\:/Documents/ProjectXTime/app/src/main/res/drawable/ic_schedule.xml" value="0.232" />
-        <entry key="..\:/Documents/ProjectXTime/app/src/main/res/drawable/ic_score.xml" value="0.232" />
-        <entry key="..\:/Documents/ProjectXTime/app/src/main/res/layout/fragment_activate_period.xml" value="0.25416666666666665" />
         <entry key="..\:/Documents/ProjectXTime/app/src/main/res/layout/fragment_add_student.xml" value="0.22552083333333334" />
         <entry key="..\:/Documents/ProjectXTime/app/src/main/res/layout/fragment_admin_c_room.xml" value="0.23854166666666668" />
         <entry key="..\:/Documents/ProjectXTime/app/src/main/res/layout/fragment_admin_menu.xml" value="0.264" />
@@ -35,7 +29,6 @@
         <entry key="..\:/Documents/ProjectXTime/app/src/main/res/layout/fragment_admin_subjets.xml" value="0.15942028985507245" />
         <entry key="..\:/Documents/ProjectXTime/app/src/main/res/layout/fragment_admin_teachers.xml" value="0.1" />
         <entry key="..\:/Documents/ProjectXTime/app/src/main/res/layout/fragment_login.xml" value="0.22552083333333334" />
-        <entry key="..\:/Documents/ProjectXTime/app/src/main/res/layout/fragment_manage_score.xml" value="0.25416666666666665" />
         <entry key="..\:/Documents/ProjectXTime/app/src/main/res/layout/fragment_splash.xml" value="0.22552083333333334" />
         <entry key="..\:/Documents/ProjectXTime/app/src/main/res/layout/fragment_student_course_retirement.xml" value="0.22552083333333334" />
         <entry key="..\:/Documents/ProjectXTime/app/src/main/res/layout/fragment_student_menu.xml" value="0.22552083333333334" />
