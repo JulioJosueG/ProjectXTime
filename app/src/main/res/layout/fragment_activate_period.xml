@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".view.admin.ActivatePeriodFragment">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="46dp"
+        android:text="Activar Período"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tv_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="10dp"
+        android:hint="Períodos:"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <RadioGroup
+        android:id="@+id/rg_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_sex"
+        android:orientation="horizontal"
+        android:translationX="50dp">
+
+        <RadioButton
+            android:id="@+id/rb_primero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:hint="Primero"
+            android:padding="5dp"
+            android:textSize="18dp"
+            android:value="1" />
+
+        <RadioButton
+            android:id="@+id/rb_segundo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:hint="Segundo"
+            android:padding="5dp"
+            android:textSize="18dp"
+            android:value="2" />
+
+        <RadioButton
+            android:id="@+id/rb_tercero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:hint="Tercero"
+            android:padding="5dp"
+            android:textSize="18dp"
+            android:value="2" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_activate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rg_period"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="470dp"
+        android:text="Activar" />
+
+</RelativeLayout>
