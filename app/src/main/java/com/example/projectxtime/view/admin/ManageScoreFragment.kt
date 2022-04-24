@@ -6,8 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.projectxtime.R
+import com.example.projectxtime.databinding.FragmentManageScoreBinding
 
 class ManageScoreFragment : Fragment() {
+
+    private lateinit var binding: FragmentManageScoreBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,7 +20,8 @@ class ManageScoreFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+        binding = FragmentManageScoreBinding.inflate(inflater,container,false)
+
         return inflater.inflate(R.layout.fragment_manage_score, container, false)
     }
 
