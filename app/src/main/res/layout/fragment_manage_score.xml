@@ -37,7 +37,7 @@
             android:id="@+id/planets_spinner"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_toEndOf="@id/tv_subject" />
+            android:layout_toEndOf="@id/tv_subject"/>
     </RelativeLayout>
 
 <androidx.recyclerview.widget.RecyclerView

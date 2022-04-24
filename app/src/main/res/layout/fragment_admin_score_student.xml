@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".view.admin.AdminScoreStudentFragment">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="46dp"
+        android:text="Calificación de Estudiante"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:id="@+id/scroll_view"
+        android:layout_width="378dp"
+        android:layout_height="325dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_pparcial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Primer parcial"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_sparcial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_pparcial"
+                android:layout_marginTop="10dp"
+                android:hint="Segundo parcial"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_tparcial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_sparcial"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:hint="Tercer parcial"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_ppractica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_tparcial"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:hint="Primera práctica"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/et_fpractica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_ppractica"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:hint="Práctica final"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
