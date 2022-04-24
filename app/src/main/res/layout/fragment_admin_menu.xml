@@ -90,7 +90,7 @@
                 android:id="@+id/img_assign"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:src="@drawable/ic_assign"
+                android:src="@drawable/ic_subject"
                 android:background="@color/white"
                 app:layout_constraintBottom_toTopOf="@+id/layout_title3"
                 />
