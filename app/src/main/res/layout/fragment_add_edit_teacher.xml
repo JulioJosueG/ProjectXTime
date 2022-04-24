@@ -23,7 +23,7 @@
         android:textColorHint="@color/black" >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/taskEdit"
+            android:id="@+id/teacherNameEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Name"
@@ -42,7 +42,7 @@
         android:textColorHint="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/taskDescriptionEdit"
+            android:id="@+id/teacherLastNameEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Last Name"
@@ -95,7 +95,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Update"
+        android:text="Save"
         android:textColor="@color/white"
         android:textAllCaps="false" />
 
