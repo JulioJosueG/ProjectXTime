@@ -40,10 +40,6 @@ class AdminMenuFragment : Fragment() {
             it.findNavController().navigate(R.id.action_adminMenuFragment_to_adminCRoomFragment)
         }
 
-        binding.btnCalificacion.setOnClickListener {
-            it.findNavController().navigate(R.id.action_adminMenuFragment_to_adminScoreFragment)
-        }
-
         return binding.root
     }
 

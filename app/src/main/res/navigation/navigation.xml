@@ -63,7 +63,11 @@
         android:id="@+id/teacherMenuFragment"
         android:name="com.example.projectxtime.view.TeacherMenuFragment"
         android:label="fragment_teacher_menu"
-        tools:layout="@layout/fragment_teacher_menu" />
+        tools:layout="@layout/fragment_teacher_menu" >
+        <action
+            android:id="@+id/action_teacherMenuFragment_to_teacherScheduleFragment"
+            app:destination="@id/teacherScheduleFragment" />
+    </fragment>
     <fragment
         android:id="@+id/studentScheduleFragment"
         android:name="com.example.projectxtime.view.students.StudentScheduleFragment"
@@ -120,4 +124,9 @@
         android:name="com.example.projectxtime.view.admin.ManageScoreFragment"
         android:label="fragment_manage_score"
         tools:layout="@layout/fragment_manage_score" />
+    <fragment
+        android:id="@+id/teacherScheduleFragment"
+        android:name="com.example.projectxtime.view.teachers.TeacherScheduleFragment"
+        android:label="fragment_teacher_schedule"
+        tools:layout="@layout/fragment_teacher_schedule" />
 </navigation>

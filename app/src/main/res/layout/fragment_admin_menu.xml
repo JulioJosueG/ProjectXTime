@@ -60,10 +60,11 @@
                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
                 <Button
+                    android:id="@+id/btnStudent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Ir"
-                    android:backgroundTint="@color/blue_200"/>
+                    android:backgroundTint="@color/blue_200"
+                    android:text="Ir" />
 
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -114,10 +115,11 @@
                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
                 <Button
+                    android:id="@+id/btnAsignaturas"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Ir"
-                    android:backgroundTint="@color/blue_200"/>
+                    android:backgroundTint="@color/blue_200"
+                    android:text="Ir" />
 
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -177,6 +179,7 @@
                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
                 <Button
+                    android:id="@+id/btnAula"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/blue_200"
@@ -230,10 +233,11 @@
                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
                 <Button
+                    android:id="@+id/btnDocentes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Ir"
-                    android:backgroundTint="@color/blue_200"/>
+                    android:backgroundTint="@color/blue_200"
+                    android:text="Ir" />
 
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>

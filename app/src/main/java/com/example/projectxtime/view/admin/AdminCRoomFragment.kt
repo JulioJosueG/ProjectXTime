@@ -24,10 +24,10 @@ class AdminCRoomFragment : Fragment() {
         binding = FragmentAdminCRoomBinding.inflate(inflater, container, false)
 
         binding.btnAdd.setOnClickListener {
-            it.findNavController().navigate(R.id.action_adminCRoomFragment_to_addCRoomFragment)
+  //          it.findNavController().navigate(R.id.action_adminCRoomFragment_to_addCRoomFragment)
         }
 
-        return binding.root
+       return binding.root
     }
 
 
