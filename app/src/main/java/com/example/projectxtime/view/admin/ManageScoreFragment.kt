@@ -5,13 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.findNavController
 import com.example.projectxtime.R
-import com.example.projectxtime.databinding.FragmentAdminStudentsBinding
 
-class AdminStudentsFragment : Fragment() {
-
-    private lateinit var binding:FragmentAdminStudentsBinding
+class ManageScoreFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,14 +18,7 @@ class AdminStudentsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-
-        binding = FragmentAdminStudentsBinding.inflate(inflater, container,false)
-
-        binding.btnFloatAdd.setOnClickListener {
-            it.findNavController().navigate(R.id.action_adminStudentsFragment_to_addStudentFragment)
-        }
-
-        return binding.root
+        return inflater.inflate(R.layout.fragment_manage_score, container, false)
     }
 
 }

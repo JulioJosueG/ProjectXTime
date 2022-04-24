@@ -7,11 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import com.example.projectxtime.R
-import com.example.projectxtime.databinding.FragmentAdminStudentsBinding
+import com.example.projectxtime.databinding.FragmentActivatePeriodBinding
 
-class AdminStudentsFragment : Fragment() {
+class ActivatePeriodFragment : Fragment() {
 
-    private lateinit var binding:FragmentAdminStudentsBinding
+    private lateinit var binding: FragmentActivatePeriodBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,15 +21,14 @@ class AdminStudentsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
 
-        binding = FragmentAdminStudentsBinding.inflate(inflater, container,false)
+        binding = FragmentActivatePeriodBinding.inflate(inflater,container,false)
 
-        binding.btnFloatAdd.setOnClickListener {
-            it.findNavController().navigate(R.id.action_adminStudentsFragment_to_addStudentFragment)
+        binding.btnActivate.setOnClickListener {
+            it.findNavController().navigate(R.id.action_adminMenuFragment_to_adminScoreFragment)
         }
 
-        return binding.root
+        return inflater.inflate(R.layout.fragment_activate_period, container, false)
     }
 
 }
