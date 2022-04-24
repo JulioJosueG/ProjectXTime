@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".view.admin.AddStudentFragment">
+    tools:context=".view.admin.AddSubjets">
 
     <TextView
         android:id="@+id/titleAdmin"
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:minHeight="46dp"
-        android:text="Administrar Estudiantes"
+        android:text="Administrar Asignaturas"
         android:textAlignment="center" />
 
     <LinearLayout
@@ -25,17 +25,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/CodAsignatura"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:hint="Matrícula"
-                android:inputType="textPersonName|textCapWords"
-                android:padding="10dp"
-                android:textColor="@color/black" />
+            android:layout_height="228dp">
 
             <EditText
                 android:id="@+id/et_NombreAsig"
@@ -43,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/CodAsignatura"
                 android:layout_marginTop="10dp"
-                android:hint="Nombre"
+                android:hint="Nombre Asignatura"
                 android:inputType="textPersonName|textCapWords"
                 android:padding="10dp"
                 android:textColor="@color/black" />
@@ -55,55 +45,45 @@
                 android:layout_below="@id/et_NombreAsig"
                 android:layout_marginTop="10dp"
                 android:drawablePadding="10dp"
-                android:hint="Apellido"
+                android:hint="Creditos Asignatura"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/CodAsignatura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Codigo Asignatura"
                 android:inputType="textPersonName|textCapWords"
                 android:padding="10dp"
                 android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/tv_sex"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/et_Creditos"
-                android:layout_marginTop="10dp"
-                android:drawablePadding="10dp"
-                android:hint="Sexo"
-                android:padding="10dp"
-                android:textColor="@color/black"
-                android:textSize="18dp" />
-
-            <RadioGroup
-                android:id="@+id/rg_sex"
+                android:id="@+id/LblProfesor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tv_sex"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal"
-                android:translationX="50dp">
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginBottom="32dp"
+                android:text="Profesor:"
+                android:textSize="18sp" />
 
-                <RadioButton
-                    android:id="@+id/rb_women"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:hint="Mujer"
-                    android:padding="5dp"
-                    android:textSize="18dp"
-                    android:value="1" />
-
-                <RadioButton
-                    android:id="@+id/rb_men"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="false"
-                    android:hint="Hombre"
-                    android:padding="5dp"
-                    android:textSize="18dp"
-                    android:value="2" />
-            </RadioGroup>
+            <Spinner
+                android:id="@+id/IdProfesores"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="32dp"
+                android:spinnerMode="dropdown" />
 
 
         </RelativeLayout>
+
     </LinearLayout>
 
     <Button
@@ -112,4 +92,5 @@
         android:layout_below="@id/scroll_view"
         android:layout_marginTop="249dp"
         android:text="Guardar"/>
+
 </RelativeLayout>
