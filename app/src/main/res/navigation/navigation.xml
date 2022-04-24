@@ -78,7 +78,11 @@
         android:id="@+id/adminStudentsFragment"
         android:name="com.example.projectxtime.view.admin.AdminStudentsFragment"
         android:label="fragment_admin_students"
-        tools:layout="@layout/fragment_admin_students" />
+        tools:layout="@layout/fragment_admin_students" >
+        <action
+            android:id="@+id/action_adminStudentsFragment_to_addStudentFragment"
+            app:destination="@id/addStudentFragment" />
+    </fragment>
     <fragment
         android:id="@+id/adminSubjetsFragment"
         android:name="com.example.projectxtime.view.admin.AdminSubjetsFragment"
@@ -94,4 +98,9 @@
         android:name="com.example.projectxtime.view.admin.AdminScoreFragment"
         android:label="fragment_admin_score"
         tools:layout="@layout/fragment_admin_score" />
+    <fragment
+        android:id="@+id/addStudentFragment"
+        android:name="com.example.projectxtime.view.admin.AddStudentFragment"
+        android:label="fragment_add_student"
+        tools:layout="@layout/fragment_add_student" />
 </navigation>

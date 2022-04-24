@@ -23,7 +23,7 @@
             android:layout_centerVertical="true"
             android:layout_margin="3dp"
             android:padding="3dp"
-            android:src="@drawable/ic_schedue"
+            android:src="@drawable/ic_schedule"
             app:tint="@color/white" />
 
         <TextView

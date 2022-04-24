@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".view.admin.AddStudentFragment">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="46dp"
+        android:text="Administrar Estudiantes"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:id="@+id/scroll_view"
+        android:layout_width="378dp"
+        android:layout_height="325dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_matricula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Matrícula"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_matricula"
+                android:layout_marginTop="10dp"
+                android:hint="Nombre"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_name"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:hint="Apellido"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_last_name"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:hint="Sexo"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <RadioGroup
+                android:id="@+id/rg_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_sex"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:translationX="50dp">
+
+                <RadioButton
+                    android:id="@+id/rb_women"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:hint="Mujer"
+                    android:padding="5dp"
+                    android:textSize="18dp"
+                    android:value="1" />
+
+                <RadioButton
+                    android:id="@+id/rb_men"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:hint="Hombre"
+                    android:padding="5dp"
+                    android:textSize="18dp"
+                    android:value="2" />
+            </RadioGroup>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/scroll_view"
+        android:layout_marginTop="249dp"
+        android:text="Guardar"/>
+</RelativeLayout>
