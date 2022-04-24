@@ -1,11 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
     tools:context=".view.admin.AdminScoreFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-  //menu interno
+  //menu interno. activar periodo o modificar nota
+    //llamar materias activas => al seleccionar una
+    //traer lista de estudiantes con esa asignatura
+    //Seleccionar estudiante a calificar enviar
+    //a formulario para calificar.
 
-</FrameLayout>
+  <TextView
+      style="@style/TextAppearance.AppCompat.Headline"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:minHeight="46dp"
+      android:text="Administrar Calificación"
+      android:textAlignment="center" />
+
+  <com.google.android.material.card.MaterialCardView
+      android:id="@+id/card_periodo"
+      android:layout_width="160dp"
+      android:layout_height="200dp"
+      android:layout_marginBottom="16dp"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"
+      android:layout_marginTop="70dp"
+      app:cardBackgroundColor="?attr/colorPrimaryDark"
+      app:cardCornerRadius="4dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <ImageView
+          android:id="@+id/img_schedule"
+          android:layout_width="match_parent"
+          android:layout_height="100dp"
+          android:src="@drawable/ic_periodo"
+          android:background="@color/white"
+          app:layout_constraintBottom_toTopOf="@+id/layout_title"
+          />
+
+      <LinearLayout
+          android:id="@+id/layout_title"
+          app:layout_constraintTop_toBottomOf="@id/img_schedule"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom"
+          android:background="#FFFFFF"
+          android:orientation="vertical"
+          android:padding="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="Activar Período"
+            android:textAlignment="center"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+        <Button
+            android:id="@+id/btn_periodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ir"
+            android:backgroundTint="@color/blue_200"/>
+
+      </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </com.google.android.material.card.MaterialCardView>
+
+  <com.google.android.material.card.MaterialCardView
+      android:id="@+id/card_subject"
+      android:layout_width="160dp"
+      android:layout_height="200dp"
+      android:layout_marginBottom="16dp"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"
+      android:layout_marginTop="70dp"
+      app:cardBackgroundColor="?attr/colorPrimaryDark"
+      app:cardCornerRadius="4dp"
+      android:layout_toEndOf="@id/card_periodo">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <ImageView
+          android:id="@+id/img_subject"
+          android:layout_width="match_parent"
+          android:layout_height="100dp"
+          android:src="@drawable/calificaciones"
+          android:background="@color/white"
+          app:layout_constraintBottom_toTopOf="@+id/layout_title2"
+          />
+
+      <LinearLayout
+          android:id="@+id/layout_title2"
+          app:layout_constraintTop_toBottomOf="@id/img_subject"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom"
+          android:background="#FFFFFF"
+          android:orientation="vertical"
+          android:padding="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="Administrar calificación"
+            android:textAlignment="center"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+        <Button
+            android:id="@+id/btn_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ir"
+            android:backgroundTint="@color/blue_200"/>
+
+      </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </com.google.android.material.card.MaterialCardView>
+
+
+
+</RelativeLayout>
