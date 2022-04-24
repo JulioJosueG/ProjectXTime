@@ -30,6 +30,9 @@
         <action
             android:id="@+id/action_loginFragment_to_teacherMenuFragment"
             app:destination="@id/teacherMenuFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_studentMenuFragment"
+            app:destination="@id/studentMenuFragment" />
     </fragment>
     <fragment
         android:id="@+id/studentMenuFragment"
@@ -44,32 +47,10 @@
         android:id="@+id/teacherMenuFragment"
         android:name="com.example.projectxtime.view.TeacherMenuFragment"
         android:label="fragment_teacher_menu"
-        tools:layout="@layout/fragment_teacher_menu" >
-        <action
-            android:id="@+id/action_teacherMenuFragment_to_teacherScheduleFragment"
-            app:destination="@id/teacherScheduleFragment" />
-        <action
-            android:id="@+id/action_teacherMenuFragment_to_teacher_subjects"
-            app:destination="@id/teacher_subjects" />
-    </fragment>
+        tools:layout="@layout/fragment_teacher_menu" />
     <fragment
         android:id="@+id/studentScheduleFragment"
         android:name="com.example.projectxtime.view.students.StudentScheduleFragment"
         android:label="fragment_student_schedule"
         tools:layout="@layout/fragment_student_schedule" />
-    <activity
-        android:id="@+id/teacherFragment"
-        android:name="com.example.projectxtime.view.TeacherFragment"
-        android:label="teacher_fragment"
-        tools:layout="@layout/teacher_fragment" />
-    <fragment
-        android:id="@+id/teacherScheduleFragment"
-        android:name="com.example.projectxtime.view.teachers.TeacherScheduleFragment"
-        android:label="fragment_teacher_schedule"
-        tools:layout="@layout/fragment_teacher_schedule" />
-    <fragment
-        android:id="@+id/teacher_subjects"
-        android:name="com.example.projectxtime.teacher_subjects"
-        android:label="fragment_teacher_subjects"
-        tools:layout="@layout/fragment_teacher_subjects" />
 </navigation>
