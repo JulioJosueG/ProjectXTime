@@ -58,6 +58,12 @@
         <action
             android:id="@+id/action_studentMenuFragment_to_studentScheduleFragment"
             app:destination="@id/studentScheduleFragment" />
+        <action
+            android:id="@+id/action_studentMenuFragment_to_studentCourseRetirementFragment"
+            app:destination="@id/studentCourseRetirementFragment" />
+        <action
+            android:id="@+id/action_studentMenuFragment_to_studentScoreFragment"
+            app:destination="@id/studentScoreFragment" />
     </fragment>
     <fragment
         android:id="@+id/teacherMenuFragment"
@@ -73,7 +79,11 @@
         android:id="@+id/adminTeachersFragment"
         android:name="com.example.projectxtime.view.admin.AdminTeachersFragment"
         android:label="fragment_admin_teachers"
-        tools:layout="@layout/fragment_admin_teachers" />
+        tools:layout="@layout/fragment_admin_teachers" >
+        <action
+            android:id="@+id/action_adminTeachersFragment_to_addEditTeacherFragment"
+            app:destination="@id/addEditTeacherFragment" />
+    </fragment>
     <fragment
         android:id="@+id/adminStudentsFragment"
         android:name="com.example.projectxtime.view.admin.AdminStudentsFragment"
@@ -87,23 +97,28 @@
         android:id="@+id/adminSubjetsFragment"
         android:name="com.example.projectxtime.view.admin.AdminSubjetsFragment"
         android:label="fragment_admin_subjets"
-        tools:layout="@layout/fragment_admin_subjets" />
+        tools:layout="@layout/fragment_admin_subjets" >
+        <action
+            android:id="@+id/action_adminSubjetsFragment_to_addSubjets"
+            app:destination="@id/addSubjets" />
+    </fragment>
     <fragment
         android:id="@+id/adminCRoomFragment"
         android:name="com.example.projectxtime.view.admin.AdminCRoomFragment"
         android:label="fragment_admin_c_room"
-        tools:layout="@layout/fragment_admin_c_room" />
+        tools:layout="@layout/fragment_admin_c_room" >
+        <action
+            android:id="@+id/action_adminCRoomFragment_to_addCRoomFragment"
+            app:destination="@id/addCRoomFragment" />
+    </fragment>
     <fragment
         android:id="@+id/adminScoreFragment"
         android:name="com.example.projectxtime.view.admin.AdminScoreFragment"
         android:label="fragment_admin_score"
         tools:layout="@layout/fragment_admin_score" >
         <action
-            android:id="@+id/action_adminScoreFragment_to_activatePeriodFragment"
-            app:destination="@id/activatePeriodFragment" />
-        <action
-            android:id="@+id/action_adminScoreFragment_to_manageScoreFragment"
-            app:destination="@id/manageScoreFragment" />
+            android:id="@+id/action_adminScoreFragment_to_adminScoreStudentFragment"
+            app:destination="@id/adminScoreStudentFragment" />
     </fragment>
     <fragment
         android:id="@+id/addStudentFragment"
@@ -120,4 +135,40 @@
         android:name="com.example.projectxtime.view.admin.ManageScoreFragment"
         android:label="fragment_manage_score"
         tools:layout="@layout/fragment_manage_score" />
+    <fragment
+        android:id="@+id/addCRoomFragment"
+        android:name="com.example.projectxtime.view.admin.AddCRoomFragment"
+        android:label="AddCRoomFragment" />
+    <fragment
+        android:id="@+id/addEditTeacherFragment"
+        android:name="com.example.projectxtime.teachers.AddEditTeacherFragment"
+        android:label="fragment_add_edit_teacher"
+        tools:layout="@layout/fragment_add_edit_teacher" />
+    <fragment
+        android:id="@+id/addSubjets"
+        android:name="com.example.projectxtime.view.admin.Subjets.AddSubjets"
+        android:label="fragment_add_subjets"
+        tools:layout="@layout/fragment_add_subjets" />
+    <fragment
+        android:id="@+id/studentCourseRetirementFragment"
+        android:name="com.example.projectxtime.StudentCourseRetirementFragment"
+        android:label="fragment_student_course_retirement"
+        tools:layout="@layout/fragment_student_course_retirement" />
+    <fragment
+        android:id="@+id/studentScoreFragment"
+        android:name="com.example.projectxtime.StudentScoreFragment"
+        android:label="fragment_student_score"
+        tools:layout="@layout/fragment_student_score" />
+    <fragment
+        android:id="@+id/adminScoreStudentFragment"
+        android:name="com.example.projectxtime.view.admin.AdminScoreStudentFragment"
+        android:label="fragment_admin_score_student"
+        tools:layout="@layout/fragment_admin_score_student" >
+        <action
+            android:id="@+id/action_adminScoreStudentFragment_to_activatePeriodFragment"
+            app:destination="@id/activatePeriodFragment" />
+        <action
+            android:id="@+id/action_adminScoreStudentFragment_to_manageScoreFragment"
+            app:destination="@id/manageScoreFragment" />
+    </fragment>
 </navigation>
