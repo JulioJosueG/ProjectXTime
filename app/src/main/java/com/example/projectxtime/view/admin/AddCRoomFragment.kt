@@ -25,13 +25,13 @@ private lateinit var binding: FragmentAddCRoomBinding
 
         binding = FragmentAddCRoomBinding.inflate(inflater,container,false)
 
-        dbreference = FirebaseDatabase.getInstance().getReference("CourseTable")
 
         binding.btnGuardar.setOnClickListener {
+
             addCourse()
         }
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_add_c_room, container, false)
+        return binding.root
     }
 
 private fun addCourse() {
@@ -41,25 +41,20 @@ private fun addCourse() {
         "CapacidadCurso" to binding.courseCapacidad.text.toString()
     )
     //if(binding.courseCapacidad.text.isNullOrEmpty() || binding.courseCodigo.text.isNullOrEmpty() || binding.courseNombre.text.isNullOrEmpty()){
-      //  Toast.makeText(requireContext(), "Debe llenar todos los campos", Toast.LENGTH_SHORT).show()
+    //  Toast.makeText(requireContext(), "Debe llenar todos los campos", Toast.LENGTH_SHORT).show()
     //}
-        dbreference = FirebaseDatabase.getInstance().getReference("CourseTable")
+    dbreference = FirebaseDatabase.getInstance("https://projectxtime-d90c2-default-rtdb.firebaseio.com/").getReference("Courses")
 
-        var id = dbreference.push().key.toString()
-        dbreference.child("CourseTable").child(id).setValue(map).addOnCompleteListener {
-
-            if(it.isSuccessful){
-                Toast.makeText(requireContext(), "Course Created", Toast.LENGTH_SHORT).show()
-            }
-            else{
-                Toast.makeText(requireContext(), "It cant be Register",Toast.LENGTH_SHORT).show()
-
-            }
+    var id = dbreference.push().key.toString()
+    dbreference.child(id).setValue(map).addOnCompleteListener {
+        if (it.isSuccessful) {
+            Toast.makeText(requireContext(), "Course Created", Toast.LENGTH_SHORT).show()
+        } else {
+            Toast.makeText(requireContext(), "It cant be Register", Toast.LENGTH_SHORT).show()
 
         }
 
-
-
+    }
 
 }
 

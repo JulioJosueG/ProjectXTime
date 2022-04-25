@@ -13,10 +13,13 @@
         <entry key="..\:/Android/ProjectXTime/app/src/main/res/drawable/ic_schedue.xml" value="0.1985" />
         <entry key="..\:/Android/ProjectXTime/app/src/main/res/layout/activity_main.xml" value="0.2604166666666667" />
         <entry key="..\:/Android/ProjectXTime/app/src/main/res/layout/fragment_add__subjets.xml" value="0.18611111111111112" />
-        <entry key="..\:/Android/ProjectXTime/app/src/main/res/layout/fragment_add_c_room.xml" value="0.16354166666666667" />
+        <entry key="..\:/Android/ProjectXTime/app/src/main/res/layout/fragment_add_c_room.xml" value="0.1" />
         <entry key="..\:/Android/ProjectXTime/app/src/main/res/layout/fragment_add_edit_teacher.xml" value="0.18611111111111112" />
         <entry key="..\:/Android/ProjectXTime/app/src/main/res/layout/fragment_add_student.xml" value="0.18611111111111112" />
+        <entry key="..\:/Android/ProjectXTime/app/src/main/res/layout/fragment_add_subject.xml" value="0.18489583333333334" />
         <entry key="..\:/Android/ProjectXTime/app/src/main/res/layout/fragment_admin_menu.xml" value="0.25885416666666666" />
+        <entry key="..\:/Android/ProjectXTime/app/src/main/res/layout/fragment_admin_score.xml" value="0.2713541666666667" />
+        <entry key="..\:/Android/ProjectXTime/app/src/main/res/layout/fragment_admin_score_student.xml" value="0.2462962962962963" />
         <entry key="..\:/Android/ProjectXTime/app/src/main/res/layout/fragment_admin_subjets.xml" value="0.18611111111111112" />
         <entry key="..\:/Android/ProjectXTime/app/src/main/res/layout/fragment_admin_teachers.xml" value="0.18611111111111112" />
         <entry key="..\:/Android/ProjectXTime/app/src/main/res/layout/fragment_login.xml" value="0.25885416666666666" />

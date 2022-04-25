@@ -1,4 +1,4 @@
-package com.example.projectxtime
+package com.example.projectxtime.view.admin
 
 import android.os.Bundle
 import android.text.TextUtils
@@ -7,15 +7,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import com.example.projectxtime.databinding.FragmentAddStudentBinding
-import com.example.projectxtime.databinding.FragmentAddSubjetsBinding
+import com.example.projectxtime.R
+import com.example.projectxtime.databinding.FragmentAddSubjectBinding
+import com.example.projectxtime.model.Course
 import com.example.projectxtime.teachers.Teacher
 import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import javax.security.auth.Subject
 
-
-class AddSubjects : Fragment() {
-
-    lateinit var binding: FragmentAddSubjetsBinding
+class AddSubject : Fragment() {
+    lateinit var binding: FragmentAddSubjectBinding
     lateinit var dbreference: DatabaseReference
 
     private fun ValidarDatos() {
@@ -39,25 +40,30 @@ class AddSubjects : Fragment() {
     private fun RegistrarAsignaturas() {
 
         val idAsignatura = dbreference.push().key.toString()
-        val Asignatura = Teacher(idAsignatura,
+        val Asignatura = Course(
             binding.TxtCod.text.toString(),
             binding.TxtNombre.text.toString(),
+            binding.editTextDate.text.toString(),
             binding.TxtCreditos.text.toString())
 
         dbreference.child(idAsignatura).setValue(Asignatura).addOnSuccessListener{
 
         }
-           .addOnFailureListener { e->
-               Toast.makeText(requireContext(), "Database register failed due to ${e.message}", Toast.LENGTH_SHORT).show()
-           }
+            .addOnFailureListener { e->
+                Toast.makeText(requireContext(), "Database register failed due to ${e.message}", Toast.LENGTH_SHORT).show()
+            }
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentAddSubjetsBinding.inflate(inflater,container,false)
-        ValidarDatos()
+        dbreference = FirebaseDatabase.getInstance("https://projectxtime-d90c2-default-rtdb.firebaseio.com/").getReference("Subjects")
+
+        binding = FragmentAddSubjectBinding.inflate(inflater,container,false)
+        binding.button2.setOnClickListener{
+            ValidarDatos()
+        }
         return binding.root
 
     }

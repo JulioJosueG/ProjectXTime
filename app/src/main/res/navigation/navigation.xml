@@ -99,8 +99,8 @@
         android:label="fragment_admin_subjets"
         tools:layout="@layout/fragment_admin_subjets" >
         <action
-            android:id="@+id/action_adminSubjetsFragment_to_addSubjets"
-            app:destination="@id/addSubjets" />
+            android:id="@+id/action_adminSubjetsFragment_to_addSubject"
+            app:destination="@id/addSubject" />
     </fragment>
     <fragment
         android:id="@+id/adminCRoomFragment"
@@ -145,11 +145,6 @@
         android:label="fragment_add_edit_teacher"
         tools:layout="@layout/fragment_add_edit_teacher" />
     <fragment
-        android:id="@+id/addSubjets"
-        android:name="com.example.projectxtime.view.admin.Subjets.AddSubjets"
-        android:label="fragment_add_subjets"
-        tools:layout="@layout/fragment_add_subjets" />
-    <fragment
         android:id="@+id/studentCourseRetirementFragment"
         android:name="com.example.projectxtime.StudentCourseRetirementFragment"
         android:label="fragment_student_course_retirement"
@@ -171,4 +166,9 @@
             android:id="@+id/action_adminScoreStudentFragment_to_manageScoreFragment"
             app:destination="@id/manageScoreFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/addSubject"
+        android:name="com.example.projectxtime.view.admin.AddSubject"
+        android:label="fragment_add_subject"
+        tools:layout="@layout/fragment_add_subject" />
 </navigation>

@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.MainActivity">
-
+    tools:context=".view.admin.AddSubject"
+    android:padding="16dp">
     <EditText
         android:id="@+id/TxtCod"
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
         android:hint="Nombre De Asignatura"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="Name" />
+        />
 
     <EditText
         android:id="@+id/TxtCreditos"
@@ -34,9 +34,18 @@
         android:layout_margin="12dp"
         android:ems="10"
         android:hint="Creditos"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:minHeight="48dp"
-        android:text="Name" />
+         />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:hint="Horario"/>
 
     <Space
         android:layout_width="match_parent"
@@ -49,4 +58,5 @@
         android:layout_height="wrap_content"
         android:hint="BtnSave"
         android:text="Button" />
+
 </LinearLayout>
