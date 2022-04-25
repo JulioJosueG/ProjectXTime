@@ -83,9 +83,9 @@ class AddStudentFragment : Fragment() {
         hashMap.put("nombre",nombre)
         hashMap.put("apellido",apellido)
         hashMap.put("sexo",sexo)
-
         dbRef = FirebaseDatabase.getInstance("https://projectxtime-d90c2-default-rtdb.firebaseio.com/").getReference("Students")
-        dbRef.child("primero")
+        val teacherID = dbRef.push().key.toString()
+        dbRef.child(teacherID)
             .setValue(hashMap)
             .addOnSuccessListener {
                 Toast.makeText(requireContext(), "Estdiante creado...", Toast.LENGTH_SHORT).show()

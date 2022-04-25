@@ -29,19 +29,7 @@ class LoginFragment : Fragment() {
 
         binding.btnLogin.setOnClickListener{
 
-            if(!binding.usertxt.text.isNullOrEmpty() && !binding.passtxt.text.isNullOrEmpty()){
 
-                FirebaseAuth.getInstance().signInWithEmailAndPassword(binding.usertxt.text.toString(),
-                    binding.passtxt.text.toString()).addOnCompleteListener{
-                    if(it.isSuccessful){
-                        binding.btnLogin.setOnClickListener{
-                            it.findNavController().navigate(R.id.action_loginFragment_to_adminMenuFragment)
-                        }
-                    }else{
-                    }
-
-                }
-            }
 
             if (binding.usertxt.text.contentEquals("admin") &&binding.usertxt.text.contentEquals("admin")){
                 it.findNavController().navigate(R.id.action_loginFragment_to_adminMenuFragment)
