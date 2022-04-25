@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.example.projectxtime.R
 import com.example.projectxtime.databinding.FragmentAddEditTeacherBinding
+import com.example.projectxtime.databinding.FragmentAdminTeachersBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -24,10 +25,7 @@ class AddEditTeacherFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // init database
-        database = FirebaseDatabase.getInstance().getReference("Profesores")
 
-        ValidateData()
     }
 
     private fun ValidateData() {
@@ -74,7 +72,14 @@ class AddEditTeacherFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_add_edit_teacher, container, false)
+        binding = FragmentAddEditTeacherBinding.inflate(inflater,container,false)
+        // init database
+        database = FirebaseDatabase.getInstance("https://projectxtime-d90c2-default-rtdb.firebaseio.com/").getReference("Teachers")
+
+        binding.btnAddUpdate.setOnClickListener{
+            ValidateData()
+
+        }
+        return binding.root
     }
 }
