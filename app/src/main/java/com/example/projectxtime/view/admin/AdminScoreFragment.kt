@@ -25,11 +25,11 @@ class AdminScoreFragment : Fragment() {
         binding = FragmentAdminScoreBinding.inflate(inflater,container,false)
 
         binding.btnPeriodo.setOnClickListener {
-            it.findNavController().navigate(R.id.action_adminScoreFragment_to_activatePeriodFragment)
+            it.findNavController().navigate(R.id.action_adminScoreStudentFragment_to_activatePeriodFragment)
         }
 
         binding.btnScore.setOnClickListener {
-            it.findNavController().navigate(R.id.action_adminScoreFragment_to_manageScoreFragment)
+            it.findNavController().navigate(R.id.action_adminScoreStudentFragment_to_manageScoreFragment)
 
         }
 

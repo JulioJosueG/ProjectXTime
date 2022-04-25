@@ -23,9 +23,9 @@ class ManageScoreFragment : Fragment() {
     ): View? {
         binding = FragmentManageScoreBinding.inflate(inflater,container,false)
 
-//        binding.rvStudentForScore.setOnClickListener {
-//            it.findNavController().navigate(R.id.action_manageScoreFragment_to_adminScoreStudentFragment)
-//        }
+        binding.rvStudentForScore.setOnClickListener {
+            it.findNavController().navigate(R.id.action_adminScoreFragment_to_adminScoreStudentFragment)
+        }
 
         return inflater.inflate(R.layout.fragment_manage_score, container, false)
     }

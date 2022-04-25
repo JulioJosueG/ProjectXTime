@@ -9,10 +9,12 @@ import androidx.fragment.app.FragmentActivity
 import androidx.navigation.findNavController
 import com.example.projectxtime.R
 import com.example.projectxtime.databinding.FragmentLoginBinding
+import com.google.firebase.auth.FirebaseAuth
 
 
 class LoginFragment : Fragment() {
     private lateinit var binding: FragmentLoginBinding
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,8 +27,22 @@ class LoginFragment : Fragment() {
     ): View? {
         binding = FragmentLoginBinding.inflate(inflater,container,false)
 
-
         binding.btnLogin.setOnClickListener{
+
+            if(!binding.usertxt.text.isNullOrEmpty() && !binding.passtxt.text.isNullOrEmpty()){
+
+                FirebaseAuth.getInstance().signInWithEmailAndPassword(binding.usertxt.text.toString(),
+                    binding.passtxt.text.toString()).addOnCompleteListener{
+                    if(it.isSuccessful){
+                        binding.btnLogin.setOnClickListener{
+                            it.findNavController().navigate(R.id.action_loginFragment_to_adminMenuFragment)
+                        }
+                    }else{
+                    }
+
+                }
+            }
+
             if (binding.usertxt.text.contentEquals("admin") &&binding.usertxt.text.contentEquals("admin")){
                 it.findNavController().navigate(R.id.action_loginFragment_to_adminMenuFragment)
 

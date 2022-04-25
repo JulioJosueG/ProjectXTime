@@ -47,10 +47,9 @@ class AddSubjects : Fragment() {
         dbreference.child(idAsignatura).setValue(Asignatura).addOnSuccessListener{
 
         }
-            .addOnFailureListener { e->-
-                // database user add failed
-                Toast.makeText(requireContext(), "Database register failed due to ${e.message}", Toast.LENGTH_SHORT).show()
-            }
+           .addOnFailureListener { e->
+               Toast.makeText(requireContext(), "Database register failed due to ${e.message}", Toast.LENGTH_SHORT).show()
+           }
     }
 
     override fun onCreateView(

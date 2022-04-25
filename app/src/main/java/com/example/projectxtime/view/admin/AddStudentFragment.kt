@@ -32,7 +32,6 @@ class AddStudentFragment : Fragment() {
         binding = FragmentAddStudentBinding.inflate(inflater,container,false)
 
         //init firebase auth
-        auth = FirebaseAuth.getInstance()
 
         binding.btnSave.setOnClickListener {
             validar()
@@ -48,7 +47,6 @@ class AddStudentFragment : Fragment() {
 
     private fun validar() {
 
-        val  uid = auth.currentUser?.uid
 
         matricula = binding.etNombre.text.toString()
         nombre = binding.etApellidos.text.toString()
@@ -79,7 +77,6 @@ class AddStudentFragment : Fragment() {
     private fun sent() {
 
         //get current user uid
-        val uid = auth.currentUser?.uid
 
         val hashMap = HashMap<String, Any?>()
         hashMap.put("matricula",matricula)
@@ -87,8 +84,8 @@ class AddStudentFragment : Fragment() {
         hashMap.put("apellido",apellido)
         hashMap.put("sexo",sexo)
 
-        dbRef = FirebaseDatabase.getInstance().getReference("Students")
-        dbRef.child(uid!!)
+        dbRef = FirebaseDatabase.getInstance("https://projectxtime-d90c2-default-rtdb.firebaseio.com/").getReference("Students")
+        dbRef.child("primero")
             .setValue(hashMap)
             .addOnSuccessListener {
                 Toast.makeText(requireContext(), "Estdiante creado...", Toast.LENGTH_SHORT).show()

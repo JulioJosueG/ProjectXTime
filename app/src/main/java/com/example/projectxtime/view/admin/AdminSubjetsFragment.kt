@@ -23,7 +23,7 @@ class AdminSubjetsFragment : Fragment() {
         binding = FragmentAdminSubjetsBinding.inflate(inflater, container,false)
 
         binding.btnFloatAdd.setOnClickListener {
-            it.findNavController().navigate(R.id.action_adminSubjetsFragment_to_add_Subjets)
+            it.findNavController().navigate(R.id.action_adminSubjetsFragment_to_addSubjets)
         }
         return inflater.inflate(R.layout.fragment_admin_subjets, container, false)
     }
