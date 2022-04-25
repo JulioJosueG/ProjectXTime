@@ -1,4 +1,4 @@
-package com.example.projectxtime.view.admin
+package com.example.projectxtime.view.admin.student
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -17,7 +17,6 @@ class AddStudentFragment : Fragment() {
     private lateinit var binding: FragmentAddStudentBinding
 
     //Firebase
-    private  lateinit var auth:FirebaseAuth
     private lateinit var dbRef:DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,9 +46,9 @@ class AddStudentFragment : Fragment() {
     private fun validar() {
 
 
-        matricula = binding.etMatricula.text.toString()
+        matricula = binding.etmatricula.text.toString()
         nombre = binding.etNombre.text.toString()
-        apellido = binding.etApellido.text.toString()
+        apellido = binding.etApellidos.text.toString()
 
         if (binding.rbMen.isChecked){
             sexo = "Hombre"
@@ -74,22 +73,20 @@ class AddStudentFragment : Fragment() {
 
     private fun sent() {
 
-        //get current user uid
-
         val hashMap = HashMap<String, Any?>()
         hashMap.put("matricula",matricula)
         hashMap.put("nombre",nombre)
         hashMap.put("apellido",apellido)
         hashMap.put("sexo",sexo)
-        dbRef = FirebaseDatabase.getInstance("https://projectxtime-d90c2-default-rtdb.firebaseio.com/").getReference("Students")
-        val teacherID = dbRef.push().key.toString()
-        dbRef.child(teacherID)
+        dbRef = FirebaseDatabase.getInstance("https://projectxtime-d90c2-default-rtdb.firebaseio.com/").getReference("StudentsModel")
+        val studentID = dbRef.push().key.toString()
+        dbRef.child(studentID)
             .setValue(hashMap)
             .addOnSuccessListener {
                 Toast.makeText(requireContext(), "Estudiante creado...", Toast.LENGTH_SHORT).show()
             }
             .addOnFailureListener{e->
-                Toast.makeText(requireContext(), "Failed saving user info due to ${e.message}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Fallo insertando el estudiante", Toast.LENGTH_SHORT).show()
             }
     }
 

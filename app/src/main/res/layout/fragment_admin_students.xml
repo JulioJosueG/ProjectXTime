@@ -30,14 +30,15 @@
         android:textColor="@color/black"
         android:textSize="18dp" />
 
-   <androidx.recyclerview.widget.RecyclerView
-       android:id="@+id/rv_students_list"
-       android:layout_width="match_parent"
-       android:layout_height="500dp"
-       android:layout_below="@id/tv_lista"
-       android:layout_marginTop="20dp">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_students_list"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/tv_lista"
+        android:layout_marginTop="20dp"
+        tools:listitem="@layout/admin_students_rv_item">
 
-   </androidx.recyclerview.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
 
    <com.google.android.material.floatingactionbutton.FloatingActionButton
        android:id="@+id/btn_float_add"

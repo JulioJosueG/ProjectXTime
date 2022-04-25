@@ -122,7 +122,7 @@
     </fragment>
     <fragment
         android:id="@+id/addStudentFragment"
-        android:name="com.example.projectxtime.view.admin.AddStudentFragment"
+        android:name="com.example.projectxtime.view.admin.student.AddStudentFragment"
         android:label="fragment_add_student"
         tools:layout="@layout/fragment_add_student" />
     <fragment
