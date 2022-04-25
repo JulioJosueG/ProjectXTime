@@ -18,10 +18,11 @@
 
     <LinearLayout
         android:id="@+id/scroll_view"
-        android:layout_width="378dp"
-        android:layout_height="325dp"
+        android:layout_width="383dp"
+        android:layout_height="361dp"
         android:layout_below="@id/title"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -99,7 +100,8 @@
                 android:minHeight="48dp"
                 android:padding="10dp"
                 android:textColor="@color/black"
-                android:textSize="18dp" />
+                android:textSize="18dp"
+                tools:ignore="TouchTargetSizeCheck" />
 
         </RelativeLayout>
     </LinearLayout>

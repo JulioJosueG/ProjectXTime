@@ -117,6 +117,9 @@
         android:label="fragment_admin_score"
         tools:layout="@layout/fragment_admin_score" >
         <action
+            android:id="@+id/action_adminScoreFragment_to_activatePeriodFragment"
+            app:destination="@id/activatePeriodFragment" />
+        <action
             android:id="@+id/action_adminScoreFragment_to_adminScoreStudentFragment"
             app:destination="@id/adminScoreStudentFragment" />
     </fragment>
@@ -159,9 +162,6 @@
         android:name="com.example.projectxtime.view.admin.AdminScoreStudentFragment"
         android:label="fragment_admin_score_student"
         tools:layout="@layout/fragment_admin_score_student" >
-        <action
-            android:id="@+id/action_adminScoreStudentFragment_to_activatePeriodFragment"
-            app:destination="@id/activatePeriodFragment" />
         <action
             android:id="@+id/action_adminScoreStudentFragment_to_manageScoreFragment"
             app:destination="@id/manageScoreFragment" />
