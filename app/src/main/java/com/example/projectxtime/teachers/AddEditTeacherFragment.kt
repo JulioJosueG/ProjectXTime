@@ -55,13 +55,16 @@ class AddEditTeacherFragment : Fragment() {
 
         val teacherID = database.push().key.toString()
         val teacher = Teacher(teacherID,
-        binding.teacherLastNameEdit.text.toString(),
+        binding.teacherNameEdit.text.toString(),
         binding.teacherLastNameEdit.text.toString(),
         gender)
 
         database.child(teacherID).setValue(teacher).addOnSuccessListener{
 
         }
+            .addOnSuccessListener {
+                Toast.makeText(requireContext(), "Profesor creado...", Toast.LENGTH_SHORT).show()
+            }
         .addOnFailureListener { e->
             // database user add failed
             Toast.makeText(requireContext(), "Database register failed due to ${e.message}", Toast.LENGTH_SHORT).show()
@@ -80,6 +83,8 @@ class AddEditTeacherFragment : Fragment() {
             ValidateData()
 
         }
+
+
         return binding.root
     }
 }

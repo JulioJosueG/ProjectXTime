@@ -53,9 +53,9 @@ class AddStudentFragment : Fragment() {
         apellido = binding.etApellidos.text.toString()
 
         if (binding.rbMen.isChecked){
-            sexo = "Es Hombre"
+            sexo = "Hombre"
         }else if (binding.rbWomen.isChecked){
-            sexo = "Es Mujer"
+            sexo = "Mujer"
         }
 
         if(nombre == ""){
@@ -88,7 +88,7 @@ class AddStudentFragment : Fragment() {
         dbRef.child(teacherID)
             .setValue(hashMap)
             .addOnSuccessListener {
-                Toast.makeText(requireContext(), "Estdiante creado...", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Estudiante creado...", Toast.LENGTH_SHORT).show()
             }
             .addOnFailureListener{e->
                 Toast.makeText(requireContext(), "Failed saving user info due to ${e.message}", Toast.LENGTH_SHORT).show()

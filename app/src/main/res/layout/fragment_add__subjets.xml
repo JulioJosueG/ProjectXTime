@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".view.MainActivity">
+    android:orientation="vertical">
 
     <EditText
         android:id="@+id/TxtCod"
@@ -24,8 +23,7 @@
         android:ems="10"
         android:hint="Nombre De Asignatura"
         android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="Name" />
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/TxtCreditos"
@@ -35,8 +33,7 @@
         android:ems="10"
         android:hint="Creditos"
         android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="Name" />
+        android:minHeight="48dp" />
 
     <Space
         android:layout_width="match_parent"
