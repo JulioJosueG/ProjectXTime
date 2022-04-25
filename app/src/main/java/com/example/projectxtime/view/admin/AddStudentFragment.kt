@@ -48,8 +48,8 @@ class AddStudentFragment : Fragment() {
     private fun validar() {
 
 
-        matricula = binding.etNombre.text.toString()
-        nombre = binding.etApellidos.text.toString()
+        matricula = binding.etmatricula.text.toString()
+        nombre = binding.etNombre.text.toString()
         apellido = binding.etApellidos.text.toString()
 
         if (binding.rbMen.isChecked){
