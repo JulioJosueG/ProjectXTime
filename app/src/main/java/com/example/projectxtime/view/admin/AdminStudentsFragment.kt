@@ -56,6 +56,9 @@ class AdminStudentsFragment : Fragment() {
     }
 
     private fun getStudentsData() {
+
+        studentsRV.visibility = View.GONE
+
         dbRef = FirebaseDatabase.getInstance("https://projectxtime-d90c2-default-rtdb.firebaseio.com/").getReference("Students")
 
         dbRef.addValueEventListener(object : ValueEventListener{
@@ -68,6 +71,8 @@ class AdminStudentsFragment : Fragment() {
                     }
                     val sAdapter = AdminStudentRVAdapter(studentList)
                     studentsRV.adapter = sAdapter
+
+                    studentsRV.visibility = View.VISIBLE
 
                 }
             }
