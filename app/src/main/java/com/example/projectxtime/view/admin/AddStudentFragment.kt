@@ -53,9 +53,9 @@ class AddStudentFragment : Fragment() {
         apellido = binding.etApellidos.text.toString()
 
         if (binding.rbMen.isChecked){
-            sexo = "Hombre"
+            sexo = "Es Hombre"
         }else if (binding.rbWomen.isChecked){
-            sexo = "Mujer"
+            sexo = "Es Mujer"
         }
 
         if(nombre == ""){
