@@ -28,7 +28,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/etmatricula"
+                android:id="@+id/et_matricula"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -39,10 +39,10 @@
                 tools:ignore="TouchTargetSizeCheck" />
 
             <EditText
-                android:id="@+id/etNombre"
+                android:id="@+id/et_nombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/etmatricula"
+                android:layout_below="@id/et_matricula"
                 android:layout_marginTop="10dp"
                 android:hint="Nombre"
                 android:inputType="textPersonName|textCapWords"
@@ -51,10 +51,10 @@
                 tools:ignore="TouchTargetSizeCheck" />
 
             <EditText
-                android:id="@+id/etApellidos"
+                android:id="@+id/et_apellido"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/etNombre"
+                android:layout_below="@id/et_nombre"
                 android:layout_marginTop="10dp"
                 android:drawablePadding="10dp"
                 android:hint="Apellido"
@@ -64,10 +64,10 @@
                 tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
-                android:id="@+id/tv_sex"
+                android:id="@+id/tv_sexo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/etApellidos"
+                android:layout_below="@id/et_apellido"
                 android:layout_marginTop="10dp"
                 android:drawablePadding="10dp"
                 android:hint="Sexo"
@@ -76,10 +76,10 @@
                 android:textSize="18dp" />
 
             <RadioGroup
-                android:id="@+id/rg_sex"
+                android:id="@+id/rg_sexo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tv_sex"
+                android:layout_below="@id/tv_sexo"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal"
                 android:translationX="50dp">

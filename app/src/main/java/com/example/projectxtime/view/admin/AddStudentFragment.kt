@@ -22,7 +22,6 @@ class AddStudentFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
 
     override fun onCreateView(
@@ -50,9 +49,9 @@ class AddStudentFragment : Fragment() {
 
         val  uid = auth.currentUser?.uid
 
-        matricula = binding.etNombre.text.toString()
-        nombre = binding.etApellidos.text.toString()
-        apellido = binding.etApellidos.text.toString()
+        matricula = binding.etMatricula.text.toString()
+        nombre = binding.etNombre.text.toString()
+        apellido = binding.etApellido.text.toString()
 
         if (binding.rbMen.isChecked){
             sexo = "Hombre"
@@ -61,7 +60,6 @@ class AddStudentFragment : Fragment() {
         }
 
         if(nombre == ""){
-
             Toast.makeText(requireContext(), "El nombre requerido...", Toast.LENGTH_SHORT).show()
         }
         else if(apellido == ""){

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.MainActivity">
+    tools:context=".view.admin.subjects.AddEditSubjectFragment">
 
     <EditText
         android:id="@+id/TxtCod"
@@ -33,10 +33,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:ems="10"
-        android:hint="Creditos"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="Name" />
+        android:text="Creditos" />
 
     <Space
         android:layout_width="match_parent"
@@ -49,4 +48,5 @@
         android:layout_height="wrap_content"
         android:hint="BtnSave"
         android:text="Button" />
+
 </LinearLayout>
