@@ -69,7 +69,11 @@
         android:id="@+id/teacherMenuFragment"
         android:name="com.example.projectxtime.view.TeacherMenuFragment"
         android:label="fragment_teacher_menu"
-        tools:layout="@layout/fragment_teacher_menu" />
+        tools:layout="@layout/fragment_teacher_menu" >
+        <action
+            android:id="@+id/action_teacherMenuFragment_to_studentScheduleFragment"
+            app:destination="@id/studentScheduleFragment" />
+    </fragment>
     <fragment
         android:id="@+id/studentScheduleFragment"
         android:name="com.example.projectxtime.view.students.StudentScheduleFragment"
