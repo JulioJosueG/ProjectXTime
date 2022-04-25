@@ -43,13 +43,15 @@
         android:id="@+id/course_capacidad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/course_nombre"
         android:layout_marginTop="20dp"
         android:hint="Capacidad"
-        android:layout_below="@id/course_nombre"
+        android:minHeight="48dp"
         android:padding="10dp"
         android:textColor="@color/black" />
 
     <Button
+        android:id="@+id/btnGuardar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

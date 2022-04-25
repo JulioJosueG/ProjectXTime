@@ -31,7 +31,6 @@ class AddStudentFragment : Fragment() {
         binding = FragmentAddStudentBinding.inflate(inflater,container,false)
 
         //init firebase auth
-        auth = FirebaseAuth.getInstance()
 
         binding.btnSave.setOnClickListener {
             validar()
@@ -47,7 +46,6 @@ class AddStudentFragment : Fragment() {
 
     private fun validar() {
 
-        val  uid = auth.currentUser?.uid
 
         matricula = binding.etMatricula.text.toString()
         nombre = binding.etNombre.text.toString()
@@ -77,19 +75,18 @@ class AddStudentFragment : Fragment() {
     private fun sent() {
 
         //get current user uid
-        val uid = auth.currentUser?.uid
 
         val hashMap = HashMap<String, Any?>()
         hashMap.put("matricula",matricula)
         hashMap.put("nombre",nombre)
         hashMap.put("apellido",apellido)
         hashMap.put("sexo",sexo)
-
-        dbRef = FirebaseDatabase.getInstance().getReference("Students")
-        dbRef.child(uid!!)
+        dbRef = FirebaseDatabase.getInstance("https://projectxtime-d90c2-default-rtdb.firebaseio.com/").getReference("Students")
+        val teacherID = dbRef.push().key.toString()
+        dbRef.child(teacherID)
             .setValue(hashMap)
             .addOnSuccessListener {
-                Toast.makeText(requireContext(), "Estdiante creado...", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Estudiante creado...", Toast.LENGTH_SHORT).show()
             }
             .addOnFailureListener{e->
                 Toast.makeText(requireContext(), "Failed saving user info due to ${e.message}", Toast.LENGTH_SHORT).show()

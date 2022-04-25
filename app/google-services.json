@@ -1,33 +1,63 @@
 {
   "project_info": {
-    "project_number": "968673659",
-    "project_id": "crudappprojectxti",
-    "storage_bucket": "crudappprojectxti.appspot.com"
+    "project_number": "183313468682",
+    "firebase_url": "https://projectxtime-d90c2-default-rtdb.firebaseio.com",
+    "project_id": "projectxtime-d90c2",
+    "storage_bucket": "projectxtime-d90c2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:968673659:android:d8a09ebdbbbc7962afd5de",
+        "mobilesdk_app_id": "1:183313468682:android:45bf797080c59ac042bef3",
         "android_client_info": {
           "package_name": "com.example.projectxtime"
         }
       },
       "oauth_client": [
         {
-          "client_id": "968673659-jfec9jtk5b02ackf1q9ifr8ru47qtmeu.apps.googleusercontent.com",
+          "client_id": "183313468682-22t0s41n3os0tkk0gfuuoa852rmai1r1.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBL3bC-RrLRv0AKtvSPiXTsROnuCuKCXA8"
+          "current_key": "AIzaSyAnPy37B7oR27SlKYnu7OpOSQylXC1UTY8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "968673659-jfec9jtk5b02ackf1q9ifr8ru47qtmeu.apps.googleusercontent.com",
+              "client_id": "183313468682-22t0s41n3os0tkk0gfuuoa852rmai1r1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183313468682:android:cabed00b34ce325442bef3",
+        "android_client_info": {
+          "package_name": "com.example.projectxtime.teachers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183313468682-22t0s41n3os0tkk0gfuuoa852rmai1r1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnPy37B7oR27SlKYnu7OpOSQylXC1UTY8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183313468682-22t0s41n3os0tkk0gfuuoa852rmai1r1.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
